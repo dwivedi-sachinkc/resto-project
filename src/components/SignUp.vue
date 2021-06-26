@@ -26,13 +26,13 @@ export default {
 }
 .register input{
   width: 300px;
-  height: 40px;
+  height: 41px;
   display: block;
   margin: 0 auto 10px;
 }
 .register button{
 width: 310px;
-height: 40px;
+height: 41px;
 border: 1px solid salmon;
 background: salmon;
 color: #fff;
