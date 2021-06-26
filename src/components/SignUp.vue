@@ -39,6 +39,12 @@ export default {
       this.email= '';
       this.password= '';
     }
+  },
+  mounted(){
+    let user = localStorage.getItem('userInfo');
+    if(user){
+      this.$router.push({name: 'Home'})
+    }
   }
 }
 </script>

@@ -11,6 +11,12 @@ export default {
     },
     methods:{
         
+    },
+    mounted(){
+    let user = localStorage.getItem('userInfo');
+    if(!user){
+      this.$router.push({name: 'SignUp'})
     }
+  }
 }
 </script>
