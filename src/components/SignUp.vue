@@ -32,9 +32,9 @@ export default {
       })
       console.warn(result);
       if(result.status==201){
-        alert("success")
+        localStorage.setItem('userInfo', JSON.stringify(result.data));
+        this.$router.push({name: 'Home'})
       }
-      localStorage.setItem('userInfo', JSON.stringify(result.data));
       this.name= '';
       this.email= '';
       this.password= '';
@@ -63,5 +63,8 @@ border: 1px solid salmon;
 background: salmon;
 color: #fff;
 cursor: pointer;
+}
+.register button:hover{
+  background: #e2562f;
 }
 </style>
